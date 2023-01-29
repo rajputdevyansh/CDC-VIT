@@ -3,15 +3,6 @@ Louis was celebrating his 10th Birthday and his parents wished to make his birth
 The challenge is that, Louis has to break the cake up into 1×1 pieces (individual squares) and find what is the minimum number of times that he breaks the choco vanilla cake, or pieces thereof, in order to achieve this?
 Note that he cannot stack pieces of the cake and break them, because the choco vanilla cake is thick. As an example, a 2×2 cake requires 3 breaks. First he can break it in half, then break each of the halves in half. He cannot break it in half, stack the two 1×2 pieces, and then use only one more break to achieve his goal.
 """
-def GCD(a,b):
-    if(b==0):
-        return a
-    else:
-        return GCD(b,a%b)
 m=int(input())
 n=int(input())
-res=GCD(m,n)
-if res%2==0:
-    print(res+1)
-else:
-    print(res)
+print((m*n)-1)
